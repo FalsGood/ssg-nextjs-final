@@ -28,7 +28,7 @@ export default function PostDetail({ post, author }) {
             {post.body}
           </p>
 
-          {/* Fitur Pengembangan: Author Info Box */}
+          {/* Author Info Box */}
           <div className="bg-teal-50 border border-teal-200 rounded-xl p-5 mt-6">
             <h3 className="text-xs font-bold uppercase tracking-wider text-teal-800 mb-2">
               Informasi Penulis
@@ -84,7 +84,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       post,
-      author, // Dikirim sebagai props ke komponen PostDetail
+      author,
     },
   };
 }

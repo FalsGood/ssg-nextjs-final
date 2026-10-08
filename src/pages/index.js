@@ -51,7 +51,7 @@ export default function Home({ posts }) {
 
 // Fetching data pada saat BUILD TIME
 export async function getStaticProps() {
-  // Ubah limit dari 10 menjadi 12 artikel
+  // Limit 12 artikel sesuai tugas mandiri
   const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=12');
   const posts = await res.json();
 
